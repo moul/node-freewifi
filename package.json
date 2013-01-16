@@ -1,7 +1,7 @@
 {
   "name": "freewifi",
   "version": "0.0.1",
-  "description": "Connection to the FreeWifi network (by the french internet and mobile provider free.fr)"
+  "description": "Connection to the FreeWifi network (by the french internet and mobile provider free.fr)",
   "main": "index.js",
   "directories": {
     "example": "examples"
