@@ -1,0 +1,28 @@
+{
+  "name": "freewifi",
+  "version": "0.0.1",
+  "description": "Connection to the FreeWifi network (by the french internet and mobile provider free.fr)"
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/moul/node-freewifi.git"
+  },
+  "dependencies": {
+  },
+  "keywords": [
+    "free.fr",
+    "free",
+    "wireless",
+    "wifi",
+    "freewifi"
+  ],
+  "author": "Manfred Touron <m@42.am>",
+  "license": "MIT",
+  "readmeFilename": "README.md"
+}
