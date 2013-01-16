@@ -43,7 +43,7 @@ class FreeWifi
             options:  opts
             response: data
         return fn false, data, res
-    req.on 'error', (e) -> return fn true, e
+    req.on 'error', (e) -> return fn true, '', e
     req.end query
 
   _connectRequest: (fn) =>
