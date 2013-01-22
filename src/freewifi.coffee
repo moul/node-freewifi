@@ -1,10 +1,10 @@
 class FreeWifi
   constructor: (@options = {}) ->
-    @options.host          ?= 'wifi.free.fr'
-    @options.port          ?= 443
-    @options.scheme        ?= 'https'
-    @options.verbose       ?= true
-    @options.successString ?= 'CONNEXION AU SERVICE REUSSIE'
+    @options.host            ?= 'wifi.free.fr'
+    @options.port            ?= 443
+    @options.scheme          ?= 'https'
+    @options.verbose         ?= true
+    @options.successString   ?= 'CONNEXION AU SERVICE REUSSIE'
     @http = if @options.scheme is 'https' then require 'https' else require 'http'
 
   loginRequired: =>
@@ -58,7 +58,7 @@ class FreeWifi
     @_request opts, fn
 
   _connectVerify: (data, res, fn) =>
-    if data.indexOf @options.successString is -1
+    if -1 is data.indexOf @options.successString
       fn true,  'Authentication error'
     else
       fn false, 'Success'
